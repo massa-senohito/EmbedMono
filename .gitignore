@@ -1,0 +1,21 @@
+*~
+*.swp
+*.swo
+*.sdf
+*.suo
+*.png
+*.opensdf
+*.unity*
+*.mat
+*.bmp
+*.gch
+bin/
+obj/
+Build/
+Managed Source/
+Source/mono/
+Source/Release/
+Source/[Dd]ebug/
+ipch/
+CMakeLists.*
+*.cgfx
