@@ -11,7 +11,8 @@ namespace mono_debug{
 }
 MonoObject* allocate(bool callCtor,MonoClass* klass){
     
-    //new_fastなんかもある、使うオブジェクトを予約
+    //new_fastなんかもある、使うオブジェクトを予約 :w
+    //
     auto m_pClassLibraryManager = mono_object_new(mono_domain_get(), klass);
 
     if(callCtor)mono_runtime_object_init(m_pClassLibraryManager);
@@ -102,7 +103,7 @@ bool BasicLoader::Run()
 	return true;
 }
 
-#include "mono\metadata\exception.h"
+#include "mono/metadata/exception.h"
 //MonoErrorはメソッドが見当たらないなどのエラー
 MonoException* genericHandle(){
     //ハンドルされなかった例外をオブジェクトからとってきている？

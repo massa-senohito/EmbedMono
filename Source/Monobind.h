@@ -5,7 +5,7 @@ public:
     Monobind(void);
     ~Monobind(void);
 };
-#include "mono\metadata\appdomain.h"
+#include "mono/metadata/appdomain.h"
 namespace mono_security{
 void set_core_clr_platform_callback  (MonoCoreClrPlatformCB callback)
 ;
@@ -124,7 +124,7 @@ const char* corlib_version  (void)
 }
 
 
-#include "mono\mini\jit.h"
+#include "mono/mini/jit.h"
  namespace mono_method{
 	 mono_bool can_access_method  (MonoMethod *method, MonoMethod *called);
 	 mono_bool can_access_field  (MonoMethod *method, MonoClassField *field);
@@ -227,7 +227,7 @@ namespace mono_bounded{
 namespace mono_get{
 	MonoMethod* inflated_method  (MonoMethod *method);
 }
-#include "mono\metadata\loader.h"
+#include "mono/metadata/loader.h"
 namespace mono_stack{
     //ilのオフセットいらないならno_ilが使える、高速
     void walk_no_il    (MonoStackWalk func, void* user_data);

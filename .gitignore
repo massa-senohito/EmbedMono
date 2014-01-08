@@ -9,6 +9,9 @@
 *.mat
 *.bmp
 *.gch
+mono*
+Source/CMakeCache.txt
+Source/CMakeFiles/
 bin/
 obj/
 Build/
@@ -17,5 +20,5 @@ Source/mono/
 Source/Release/
 Source/[Dd]ebug/
 ipch/
-CMakeLists.*
+#CMakeLists.*
 *.cgfx
